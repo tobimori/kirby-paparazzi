@@ -43,7 +43,7 @@ Paparazzi uses controllers to inject its logic in your templates. Let's create a
 
 use tobimori\Paparazzi\Controller;
 
-return Controller::create([
+return Controller::run([
   'width' => 1200,
   'height' => 630
 ]);
@@ -98,9 +98,9 @@ Please note, that this will require kirby-seo v0.4.0 or higher.
 
 ### Using the PHPs built-in server
 
-**The built-in PHP server is not capable of accepting more than 1 request at once.**
+**The built-in PHP server is by default not capable of accepting more than 1 request at once.**
 If you're loading assets or images from your server, the request will time out as Puppeteer will never go into idle state.
-You'll have to use a proper webserver like Apache or Nginx in development for this to work. I recommend [Laravel Valet](https://laravel.com/docs/10.x/valet).
+You'll have to use a proper webserver like Apache or Nginx in development for this, or set the `PHP_CLI_SERVER_WORKERS` environment variable to something bigger than 1.
 
 ## Roadmap
 
