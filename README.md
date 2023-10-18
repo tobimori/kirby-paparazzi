@@ -43,10 +43,7 @@ Paparazzi uses controllers to inject its logic in your templates. Let's create a
 
 use tobimori\Paparazzi\Controller;
 
-return Controller::run([
-  'width' => 1200,
-  'height' => 630
-]);
+return Controller::run(width: 1200, height: 630);
 ```
 
 #### 3. Adding content to the template
