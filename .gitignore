@@ -1,0 +1,11 @@
+# OS files
+.DS_Store
+.idea
+*.cache
+
+# Dev files
+index.dev.mjs
+node_modules
+
+# Dependencies should be installed with composer
+/vendor

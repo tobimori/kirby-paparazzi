@@ -1,0 +1,40 @@
+{
+  "name": "tobimori/kirby-paparazzi",
+  "description": "Programatically generate images of your pages",
+  "version": "0.1.0",
+  "type": "kirby-plugin",
+  "keywords": [
+    "kirby",
+    "kirby-plugin"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Tobias Möritz",
+      "email": "tobias@moeritz.io",
+      "homepage": "https://moeritz.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "tobimori\\Paparazzi\\": "classes"
+    }
+  },
+  "require": {
+    "php": ">=8.2.0",
+    "getkirby/composer-installer": "^1.2",
+    "spatie/browsershot": "^3.59"
+  },
+  "require-dev": {
+    "getkirby/cms": "^4.0.0-beta.2"
+  },
+  "scripts": {
+    "dist": "composer install --no-dev --optimize-autoloader"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "allow-plugins": {
+      "getkirby/composer-installer": true
+    }
+  }
+}
