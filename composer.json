@@ -1,7 +1,7 @@
 {
   "name": "tobimori/kirby-paparazzi",
   "description": "Programatically generate images of your pages",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "kirby-plugin",
   "keywords": [
     "kirby",
@@ -23,7 +23,7 @@
   "require": {
     "php": ">=8.2.0",
     "getkirby/composer-installer": "^1.2",
-    "spatie/browsershot": "^3.59"
+    "spatie/browsershot": "^4.1.3"
   },
   "require-dev": {
     "getkirby/cms": "^4.0.0-beta.2"
