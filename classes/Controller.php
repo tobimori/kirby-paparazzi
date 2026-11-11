@@ -143,7 +143,7 @@ class Controller
   /**
    * Returns the Browsershot instance or runs a callback on it
    */
-  public function instance(callable $fn = null): Browsershot
+  public function instance(?callable $fn = null): Browsershot
   {
     if ($fn) {
       $fn($this->instance);
